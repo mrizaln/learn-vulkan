@@ -1,0 +1,9 @@
+Checks:
+  modernize*
+  bugprone*
+  performance*
+  readability*
+  cppcoreguidelines-special-member-functions
+  -modernize-use-trailing-return-type
+  -modernize-use-nodiscard
+  -readability-redundant-access-specifiers
