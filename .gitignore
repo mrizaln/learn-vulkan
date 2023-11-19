@@ -1,0 +1,7 @@
+**/.cache
+**/build
+**/neovim.json
+**/Session.vim
+**/compile_commands.json
+**/*.ini
+other
