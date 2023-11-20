@@ -111,8 +111,6 @@ private:
 
                 if (device.getSurfaceSupportKHR(index, surface) == VK_TRUE) {
                     indices.m_presentFamily = index;
-                } else {
-                    return false;
                 }
 
                 if (indices.isComplete()) {

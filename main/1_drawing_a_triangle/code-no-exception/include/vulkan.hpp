@@ -77,10 +77,7 @@ private:
                 auto [result, value] = device.getSurfaceSupportKHR(index, surface);
                 if (result == vk::Result::eSuccess && value == VK_TRUE) {
                     indices.m_presentFamily = index;
-                } else {
-                    return std::nullopt;
                 }
-
                 if (indices.isComplete()) {
                     break;
                 }
@@ -110,10 +107,7 @@ private:
                 auto [result, value] = device.getSurfaceSupportKHR(index, surface);
                 if (result == vk::Result::eSuccess && value == VK_TRUE) {
                     indices.m_presentFamily = index;
-                } else {
-                    return false;
                 }
-
                 if (indices.isComplete()) {
                     break;
                 }
